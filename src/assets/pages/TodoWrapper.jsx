@@ -15,7 +15,9 @@ export default function TodoWrapper() {
   return (
     <div>
       <TodoForm addTodo={addTodo} />
-      <Todo />
+      {todos.map((todo, index) => {
+        return <Todo text={todo} key={index} />;
+      })}
     </div>
   );
 }

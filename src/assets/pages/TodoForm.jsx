@@ -15,7 +15,7 @@ export default function TodoForm({ addTodo }) {
         onSubmit={handleSubmit}
       >
         <input
-          className="border-2 border-zinc-600 w-64 h-12"
+          className="border-2 border-zinc-600 w-72 h-12"
           placeholder="Add Todo"
           onChange={(e) => setTodo(e.target.value)}
           value={todo}
