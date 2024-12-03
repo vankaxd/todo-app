@@ -10,7 +10,6 @@ export default function TodoWrapper() {
       ...todos,
       { id: Date.now(), todo: text, completed: false, isEditing: false },
     ]);
-    console.log(todos);
   };
 
   const deleteTodo = (id) => {
@@ -32,7 +31,7 @@ export default function TodoWrapper() {
   };
 
   return (
-    <div>
+    <div className="space-y-4">
       <TodoForm addTodo={addTodo} />
       {todos.map((todo) => (
         <Todo
