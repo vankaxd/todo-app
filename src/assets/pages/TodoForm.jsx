@@ -9,7 +9,7 @@ export default function TodoForm({ addTodo }) {
     setTodo("");
   };
   return (
-    <div className="mt-12">
+    <div className="mt-6">
       <form
         className="flex flex-row justify-center gap-5"
         onSubmit={handleSubmit}
